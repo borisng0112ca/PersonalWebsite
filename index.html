@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boris Ng</title>
+    <link rel="icon" href="favicon_io/favicon.ico" />
+
+    <!-- CSS style sheets -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1a2bf17033.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!-- home -->
+    <section id="home">
+        <nav class="navbar navbar-expand-lg fixed-top" role="navigation">
+          <div class="container">
+            <a href="#home" class="navbar-brand">Boris Ng</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a href="#home" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li id = "projectScroll"class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <h1 class="text-overlay">
+          Hi there!<br />
+          I'm Boris Ng
+        </h1>
+     </section>
+    
+    <!-- about section -->
+    <section id="about">
+      <div id = "aboutContainer" class = "container-fluid">
+        <div class="row">
+          <div class="col-lg-5 col-md-5 col-sm-12 aboutImage">
+            <img id="me" src="images/IMG_1614.jpg" class="" alt="me">
+          </div>
+          <div class="col-lg-7 col-md-7 col-sm-12 aboutText">
+            <h2>About</h1>
+            <p></br>Hi, I'm Boris and welcome to my personal website. I'm a 2nd year industrial engineering student at the University of Toronto. I'm especially interested in full-stack web development, data engineering and finance, and I hope to make a great impact in the world with my knowledge. In my free time, I love hanging out with my friends and playing basketball and fencing. I'm also part of the varsity fencing team here at the University of Toronto.</p>
+            <p></br>I'm currently looking for Summer 2021 internship opportunities, feel free to contact me for collaborations or any opportunities, I'm always down for a chat!</p>
+          </div>
+        </row>
+      </div>
+    </section> 
+
+
+    <!-- Projects  -->
+    <section id="projects">
+      <hr class="text-secondary">
+      <div class = "container-fluid customized-container">
+        <h2>Projects</h2>
+        <p>Latest projects that I made in my free time</p>
+        <div class="row">
+          <div class="project col-md-6 col-lg-6 col-sm-12">
+            <div class="card">
+              <img class="card-img-top" src="images/forex.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Automated Trading System</h5>
+                <p class="card-text">Developed an automated script that connects to a real-time brokerage account via API with Python Pandas and Numpy, to preform trades (long/short) automatically in intervals of 3 minutes by using a trading strategy with OBV, RSI and Bollinger Bands, and closes all positions adaptively.</p>
+                <a href="#contact" class="btn btn-primary">Contact Me</a>
+              </div>
+            </div>
+          </div>
+          <div class="project col-md-6 col-lg-6 col-sm-12">
+            <div class="card">
+              <img class="card-img-top" src="images/stocks.gif" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Stock-screening Script</h5>
+                <p class="card-text">A stock screener written in Python utilizing Pandas, and Beautiful Soup library, which webscrapes fundamental data from Yahoo Finance, performs data transformation, and filters stocks based on Piotroski F-score, magic formula and 6-month index.</p>
+                <a href="https://github.com/borisng0112ca" class=""><i class="fab fa-github fa-3x"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project col-md-6 col-lg-6 col-sm-12">
+            <div class="card">
+              <img class="card-img-top" src="images/googleKeep.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Google Keep Clone</h5>
+                <p class="card-text">Utilized React.js, HTML & CSS to make a note-taking web application that allows users to note-take and save notes onto the cloud. Connected to a backend Node.js/Express.js system and MongoDB database, with user authentication, users can log on via their accounts onto the app.</p>
+                <a href="https://github.com/borisng0112ca" class=""><i class="fab fa-github fa-3x"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project col-md-6 col-lg-6 col-sm-12">
+            <div class="card">
+              <img class="card-img-top" src="images/personalWebsite.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Personal Website</h5>
+                <p class="card-text">Wrote with Bootstrap4, JavaScript, HTML and CSS, a website that showcases my latest projects and personality!</br></br></br></br></p>
+                <a href="https://github.com/borisng0112ca" class=""><i class="fab fa-github fa-3x"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <hr>
+
+    <!-- Contact Section-->
+    <section id="contact" class="bg-primary">
+      <h2>Contact</h2>
+      <p>Feel free to hit me up through email or Linkedin and check out my Github!</p>
+      <a href="https://www.github.com/borisng0112ca/"><i class="footer-icon fab fa-github-square fa-7x"></i></a>
+      <a href="https://www.linkedin.com/in/borisnguoft/"><i class="footer-icon fab fa-linkedin fa-7x"></i></a>
+      <a href="mailto:boris.ng@mail.utoronto.ca"><i class="footer-icon fas fa-envelope fa-7x"></i></a>
+      <footer id="footer">
+        <p>Copyright © Boris Ng - All rights reserved</p>
+      </footer>
+    </section>
+  </body>
+
+  <script src="js/script.js"></script>
+</html>

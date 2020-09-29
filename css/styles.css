@@ -1,0 +1,184 @@
+body,
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
+}
+
+.navbar {
+  transition: all 0.7s;
+  color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .navbar-brand:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Change navbar styling on scroll */
+.navbar.active {
+  background: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+  color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus,
+.navbar.active .navbar-brand:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+  color: #555;
+}
+
+@media (min-width: 1400px) {
+  .aboutText {
+    padding-top: 10%;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    background: #fff;
+  }
+
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #555;
+  }
+
+  .navbar .navbar-brand:hover,
+  .navbar .nav-link:hover {
+    color: black;
+  }
+
+  .aboutText {
+    padding-top: 40px;
+  }
+}
+
+#home {
+  background: url(/images/markos-mant-MdS2EJCDLlk-unsplash.jpg) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.text-overlay {
+  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 7s; /* Firefox < 16 */
+  -ms-animation: fadein 7s; /* Internet Explorer */
+  -o-animation: fadein 7s; /* Opera < 12.1 */
+  animation: fadein 7s;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 400%;
+  line-height: 150%;
+}
+
+hr {
+  border: dotted;
+  border-bottom: none;
+  width: 30%;
+  margin: 100px auto;
+}
+
+.container-fluid {
+  margin: 10% 0;
+  padding: 0 15%;
+}
+
+#me {
+  width: 100%;
+  height: auto;
+  border-radius: 15%;
+}
+
+.aboutText {
+  text-align: left;
+}
+
+.project {
+  padding: 1.5% 3%;
+}
+
+#contact {
+  padding-top: 50px;
+  color: #fff;
+}
+
+.footer-icon {
+  margin: 5% 10%;
+  color: #fff;
+}
+
+.footer-icon:hover {
+  opacity: 50%;
+}
+
+#footer {
+  margin-top: 60px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-size: 75%;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
