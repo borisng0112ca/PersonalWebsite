@@ -4,7 +4,8 @@ html {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
   text-align: center;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -94,6 +95,7 @@ body {
   vertical-align: middle;
   color: white;
   font-size: 300%;
+  font-family: "Raleway", sans-serif;
   line-height: 150%;
 }
 
