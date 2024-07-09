@@ -1,2 +1,2 @@
-# PersonalWebsiteV2
-Personal Website written in Bootstrap, JavaScript, HTML and CSS
+# PersonalWebsite
+Personal Website written in JS, HTML and CSS
